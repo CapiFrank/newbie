@@ -7,6 +7,7 @@ import { FaAssistiveListeningSystems } from "react-icons/fa";
 import { MdPlaylistPlay } from "react-icons/md";
 import MenuButton from './MiniComponents/MenuButton';
 import { useLocalContext } from 'Application/Context/LocalContext';
+import UserIcon from './MiniComponents/UserIcon';
 
 export function Sidebar() {
     const Sites = [
@@ -44,6 +45,9 @@ export function Sidebar() {
                             </li>
                         ))}
                     </ul>
+                </div>
+                <div>
+                    <UserIcon/>
                 </div>
             </div>
         </div>

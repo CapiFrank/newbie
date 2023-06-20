@@ -7,6 +7,7 @@ import { HeaderSm } from './Components/HeaderSm';
 import { LocalContext } from './Context/LocalContext';
 import { ArtistDetail } from 'Application/Pages/ArtistDetail';
 import { FoundArtists } from 'Application/Pages/FoundArtists'
+import { AlbumDetail } from './Pages/AlbumDetail';
 
 
 
@@ -22,6 +23,7 @@ export default function App() {
             <Route path='/' element={<Home />}> </Route>
             <Route path='artist/:artistId' element={<ArtistDetail />}> </Route>
             <Route path='searched/:searchKey' element={<FoundArtists />}> </Route>
+            <Route path='album/:albumId' element={<AlbumDetail />}> </Route>
             <Route path='*' element={<NotFound />}></Route>
           </Routes>
         </div>
